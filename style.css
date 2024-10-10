@@ -1,0 +1,610 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+body{
+    overflow-x: hidden;
+}
+nav {
+    width: 100%;
+    height: 15vh;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0vw 3vw;
+    mix-blend-mode: difference;
+    z-index: 9;
+}
+
+.left-side {
+
+    font-size: 1.5vw;
+    height: 6vh;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+.left-side h1 {
+    transition: all cubic-bezier(0.55, 0.085, 0.68, 0.53).4s;
+    cursor: pointer;
+    color: #fff;
+}
+
+.left-side:hover #logo {
+    margin-top: -5.5vh;
+}
+
+.right-side {
+
+    font-size: 1.3vw;
+    height: 5vh;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.right-side h2 {
+    transition: all cubic-bezier(0.55, 0.085, 0.68, 0.53).4s;
+    cursor: pointer;
+    color: #fff;
+}
+
+.right-side:hover #logo2 {
+    margin-top: -5vh;
+}
+
+.part-1 {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+.content-part-1 {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: 100vh;
+}
+
+.rotate-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    width: 200vw;
+    height: 200vh;
+    background-color: black;
+    scale: 1;
+}
+
+.row-div {
+    width: calc(200vw/5);
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.img-div {
+    width: 100%;
+    height: calc(100%/4);
+
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.img-div img {
+    width: 100%;
+}
+
+#row-div-2 {
+    margin-top: -5%;
+}
+
+#row-div-3 {
+    margin-top: -8%;
+}
+
+#row-div-4 {
+    margin-top: -12%;
+}
+
+#row-div-5 {
+    margin-top: -15%;
+}
+
+#row-div-6 {
+    margin-top: -18%;
+}
+
+.overlay-div {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 5vw;
+}
+
+.overlay-div h1 {
+    opacity: 0;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vh;
+    color: #fff;
+}
+
+.scroll-down h3 {
+    font-size: 14px;
+
+}
+
+.scroll-load {
+    width: 8vw;
+
+    border-radius: 50px;
+    height: 2px;
+    background-color: #ffffff27;
+}
+
+.scrolling {
+    width: 0;
+
+    border-radius: 50px;
+    height: 2px;
+    background-color: #fff;
+}
+
+
+/* -----------------------------------------------part-2-------------------------------------------------- */
+.part-2 {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.rounded-div-wrapper {
+    width: 100%;
+    height: 100px;
+    margin-top: -100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.rounded-div {
+    width: 150%;
+    height: 750%;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.text-Reaveal {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+
+}
+
+.text-area {
+    font-size: 6.5vw;
+    font-weight: bold;
+    font-family: sans-serif;
+    opacity: 0.35;
+    position: absolute;
+    left: 10%;
+}
+
+.text-area-hover {
+    font-size: 6.5vw;
+    font-weight: bold;
+    font-family: sans-serif;
+    opacity: 1;
+    width: 0;
+    position: absolute;
+    left: 10%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* ------------part-3---------------------- */
+.part-3 {
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    background-color: white;
+  
+}
+
+.top-part {
+    position: absolute;
+    top: -18vh;
+    width: 100%;
+    height: 20vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 2vw;
+}
+
+.bottom-part {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    background-color: black;
+}
+
+.top-part h4 {
+    font-size: 1.5vw;
+    font-weight: bolder;
+    opacity: 0.5;
+}
+
+.cta-book {
+
+
+    border-radius: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: black;
+
+    cursor: pointer;
+    padding: 1.5vw 1.8vw;
+    flex-direction: column;
+}
+.cta-book:nth-child(2){
+    background-color: rgb(165, 165, 165);
+    color: #000 !important;
+}
+.cta-book:nth-child(2) .cta-text{
+    color: black;
+}
+.cta-text {
+
+    color: white;
+    height: 3vh;
+    overflow: hidden;
+    padding-bottom: 2vw;
+
+}
+.cta{
+    display: flex;
+  
+    gap: 1vw;
+}
+.cta-text h2 {
+    transition: all .4s ease-in-out;
+    font-weight: 500;
+
+}
+
+.cta-book:hover h2:nth-child(1) {
+    margin-top: -5vh;
+}
+/* ----------------------part-4----------------- */
+.part-4{
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgb(255, 3, 3); */
+    padding: 0vw 2vw;
+    display: flex;
+    overflow: hidden;
+}
+.left-part-4{
+    width: 50%;
+    height: 100vh;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+ 
+}
+.left-part-4 h1{
+    font-size: 8vw;
+    font-weight: 600;
+}
+.circle-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7vw;
+    height: 7vw;
+    background-color: rgb(226, 226, 226);
+    border-radius: 50px;
+}
+.right-part-4{
+    width: 50%;
+    height: 200%;
+  
+    display: flex;
+    flex-direction: column;
+    gap: 40vh;
+    margin-top: 25%;
+    padding-left: 8vw;
+}
+.content-right-part-4{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    opacity: 0;
+    
+}
+.content-right-part-4 h1{
+    font-size: 2.5vw;
+}
+/* -----------------------part-5---------------------------- */
+.part-5{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+.part-5 p{
+    font-size: 4vw;
+    opacity: 0.35;
+}
+/* -------------------part-6---------------------- */
+.part-6{
+    width: 100%;
+    height: 100vh;
+    background-color: #e7e6e6;
+}
+.part-6 .rounded-div-wrapper-6{
+    position: relative;
+    width: 100%;
+    height: 100px;
+  overflow: hidden;
+    margin-top: 100px;
+
+
+}
+.part-6 .rounded-div-6{
+    position: absolute;
+    bottom: 0;
+    width: 150%;
+    height: 750%;
+    background-color: #fff;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%);
+}
+.part-6 .text-Reaveal-6{
+    padding: 2vw 0vw; 
+}
+/* --------------part-7------------------ */
+.part-7{
+    width: 100%;
+    height: 150vh;
+    background-color: #e7e6e6;
+}
+.part-7-top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3vw;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-top: -10vw;
+}
+.logo{
+    font-size: 3vw;
+    font-weight: 500;
+}
+.btn .cta-book{
+    background-color: rgb(179, 179, 179);
+    color: black !important;
+   
+}
+.middle{
+    width: 100%;
+    margin-right: 2rem;
+   
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    flex-direction: column;
+    margin-top: 2rem;
+    padding: 0px 4rem;
+
+}
+.middle h3{
+    font-size: 30px;
+    font-weight: bolder;
+
+}
+.middle ul{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    margin-right: 22rem;
+    margin-top: 1rem;
+}
+.middle ul li{
+    font-size: 22px;
+    font-weight: bolder;
+    margin-top: .8rem;
+    opacity: .6;
+}
+.part-7-top-2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    padding: 0 3vw;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-top: 10vw;
+}
+/* --------------------part-8---------- */
+.part-8{
+    width: 100%;
+    height: 180vh;
+    background-color: #e7e6e6;
+    padding-top: 13rem;
+}
+.part-8 h1{
+   font-size: 50px;
+   font-weight: bold;
+}
+.part-7-top-2{
+    padding: 1rem 2rem;
+}
+.part-7-top{
+    padding: 1rem 2rem;
+}
+/* ----------------------part-9-------------- */
+.part-9{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.our-wrok-text{
+    width: 60vw;
+    position: absolute;
+    height: 0vh;
+    z-index: 2;
+}
+#our{
+font-size: 5vw;
+position: absolute;
+top: 0;
+left: 35%;
+transform: translate(-20%,-50%);
+color: #fff;
+}
+#work{
+    position: absolute;
+    bottom: 0;
+    right: 35%;
+    transform: translate(20%,50%);
+    color: #fff;
+    font-size: 5vw;
+}
+.our-work-text-div{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 0vh;
+}
+.scroll-work{  
+    overflow: hidden;
+}
+.scroll-img{
+    width: 100%;
+    margin-top: 0;
+    transition: all .5s;
+}
+.scroll-img img{
+    width: 100%;
+    height: 60vh;
+}
+.part-10{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.content-part-10 h1{
+    font-size: 15vw;
+    font-weight: bold;
+    width: 60%;
+}
+.content-part-10 span{
+    font-size: 2rem;
+    text-align: center;
+
+}
+.content-part-10-2{
+    width: 50%;
+    /* margin-right: 0; */
+    padding: 0 3rem;
+}
+.content-part-10-2 .cta-book {
+    width: 200px;
+    font-size: 12px;
+  
+}
+.content-part-10-2 .cta-book .cta-text{
+    font-size: 12px;
+}
+.content-part-10-2 h2{
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+.content-part-10-2 p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+    width: 70%;
+    margin-bottom: 1rem;
+    opacity: .6;
+}
+.part-11{
+    width: 100%;
+    height: 80vh;
+    background-color:#e7e6e6;
+    padding: 2rem 3rem;
+
+}
+.part-11 .container{
+    display: flex;
+    gap: 100px;
+    margin-top: 5rem;
+    font-size: 1rem;
+    opacity: .8;
+}
+
